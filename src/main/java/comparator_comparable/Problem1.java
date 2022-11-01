@@ -6,7 +6,7 @@ public class Problem1 {
     // 이곳은 빈 칸으로 두세요.
 }
 
-class SnackList implements Comparable<SnackList>{
+class SnackList implements Comparable<SnackList> {
 
     public String name;
     public int price;
@@ -15,8 +15,19 @@ class SnackList implements Comparable<SnackList>{
         this.name = name;
         this.price = price;
     }
+
+
     @Override
     public int compareTo(SnackList o) {
-        return 0;
+//        if (this.price > o.price) {
+//        return 1;
+//    } else if (this.price == o.price) {
+//        return 0;
+//    } else (this.price < o.price) {
+//        return -1;
+//        }
+        return o.price - this.price;
     }
+
+
 }
